@@ -1,5 +1,5 @@
 site_name: Демо-сайт на GH и mkdocs
-site_url: 
+site_url: 'https://Stepa86.github.io/demo_mkdocs'
 
 theme:
   name: 'material'
