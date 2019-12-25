@@ -26,12 +26,11 @@ jobs:
     
     - name: Build
       run: |
-        mkdocs gh-deploy --force
-        mkdocs --version
+        mkdocs build
     
     - name: Public
       run: |
-        cp -R temp/site/. public
+        cp -R site/. public
     
     - name: Clean temp
       run: rm -rf temp
