@@ -8,3 +8,6 @@ https://www.mkdocs.org/
 https://github.com/squidfunk/mkdocs-material
 
 https://material.io/resources/icons/
+
+https://github.com/peaceiris/actions-gh-pages
+
