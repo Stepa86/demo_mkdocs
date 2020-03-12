@@ -1,0 +1,22 @@
+image: python:alpine
+
+before_script:
+  - pip install mkdocs mkdocs-material pymdown-extensions mkdocs-awesome-pages-plugin mkdocs-minify-plugin pygments-bsl
+
+pages:
+  stage: deploy
+  script:
+  - mkdocs build -s
+  - mv site public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  
+test:
+  stage: test
+  script:
+  - mkdocs build -s
+  only:
+  - merge_requests
