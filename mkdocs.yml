@@ -1,5 +1,5 @@
-site_name: Демо-сайт на GH и mkdocs
-site_url: 'https://Stepa86.github.io/demo_mkdocs'
+site_name: Демо-сайт на GL и mkdocs
+site_url: 'https://stepa86.gitlab.io/demo_mkdocs'
 
 theme:
   name: 'material'
@@ -14,7 +14,7 @@ theme:
     code: 'Roboto Mono'
 
 repo_name: 'Stepa86/demo_mkdocs'
-repo_url: https://github.com/Stepa86/demo_mkdocs
+repo_url: https://gitlab.com/Stepa86/demo_mkdocs
 
 markdown_extensions:
     - toc:
@@ -56,6 +56,8 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/Stepa86/demo_mkdocs'
+    - type: 'gitlab'
+      link: 'https://gitlab.com/Stepa86/demo_mkdocs'
 extra_css:
     - assets/css/custom.css
 
