@@ -67,9 +67,9 @@ plugins:
 
 extra:
   social:
-    - type: fontawesome/brands/github
+    - icon: fontawesome/brands/github
       link: 'https://github.com/Stepa86/demo_mkdocs'
-    - type: fontawesome/brands/gitlab
+    - icon: fontawesome/brands/gitlab
       link: 'https://gitlab.com/Stepa86/demo_mkdocs'
 extra_css:
     - assets/css/custom.css
