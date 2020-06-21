@@ -1,7 +1,12 @@
-image: python:alpine
+image: python:latest
 
 before_script:
-  - pip install mkdocs mkdocs-material pymdown-extensions mkdocs-awesome-pages-plugin mkdocs-minify-plugin pygments-bsl
+  - git config --global user.name "Gitlab CI"
+  - git config --global user.email "GitlabCI@Gitlab.ru"
+  - pip install mkdocs mkdocs-material pymdown-extensions mkdocs-awesome-pages-plugin mkdocs-minify-plugin pygments-bsl mkdocs-git-revision-date-localized-plugin
+
+variables:
+  GIT_DEPTH: 1000
 
 pages:
   stage: deploy
