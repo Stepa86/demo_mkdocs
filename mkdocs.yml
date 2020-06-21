@@ -62,9 +62,9 @@ plugins:
         - ru
   - git-revision-date-localized:
       fallback_to_build_date: true
-    - awesome-pages:
+  - awesome-pages:
       collapse_single_pages: false
-    - minify:
+  - minify:
         minify_html: true
 
 extra:
