@@ -7,11 +7,16 @@ theme:
   favicon: 'assets/images/favicon.ico'
   language: ru
   palette:
+    scheme: preference
     primary: 'blue'
     accent: 'blue'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
+  features:
+    - tabs
+  include_search_page: false
+  search_index_only: true
 
 repo_name: 'Stepa86/demo_mkdocs'
 repo_url: https://github.com/Stepa86/demo_mkdocs
@@ -39,7 +44,8 @@ markdown_extensions:
     - pymdownx.smartsymbols
     - pymdownx.superfences
     - pymdownx.tasklist:
-        custom_checkbox: false
+        custom_checkbox: true
+        clickable_checkbox: true
     - pymdownx.tilde
     - markdown.extensions.def_list
     - markdown.extensions.footnotes
@@ -48,15 +54,16 @@ markdown_extensions:
         check_paths: true
     - pymdownx.tabbed
 
-
 plugins:
   - search:
       separator: '[\s\-\.]+'
       lang:
         - en
         - ru
+  - git-revision-date-localized:
+      fallback_to_build_date: true
   - awesome-pages:
-      collapse_single_pages: true
+      collapse_single_pages: false
   - minify:
       minify_html: true
 
@@ -68,3 +75,4 @@ extra:
       link: 'https://gitlab.com/Stepa86/demo_mkdocs'
 extra_css:
     - assets/css/custom.css
+
