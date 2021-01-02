@@ -3,8 +3,9 @@ site_url: 'https://Stepa86.github.io/demo_mkdocs/'
 
 theme:
   name: 'material'
-  logo: '/assets/images/logo.png'
-  favicon: '/assets/images/favicon.svg'
+  favicon: assets/images/alpha-m-box.svg
+  icon:
+    logo: material/alpha-m-box
   language: ru
   palette:
     scheme: preference
