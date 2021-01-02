@@ -31,5 +31,5 @@
 
 [Все статьи](SUMMARY.md)
 
-  [1]: index.assets/image-20210102180048869.png
-  [2]: index.assets/image-20210102175958453.png
+  [1]: ./index.assets/image-20210102180048869.png
+  [2]: ./index.assets/image-20210102175958453.png
