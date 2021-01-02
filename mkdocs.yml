@@ -14,7 +14,10 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   features:
-    - tabs
+    - navigation.tabs
+    - search.highlight
+    - toc.integrate
+    - header.autohide
   include_search_page: false
   search_index_only: true
 
@@ -74,5 +77,8 @@ extra:
     - icon: fontawesome/brands/gitlab
       link: 'https://gitlab.com/Stepa86/demo_mkdocs'
 extra_css:
-    - assets/css/custom.css
+  - 'assets/stylesheets/extra.css'
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - assets/javascripts/tables.js
 
