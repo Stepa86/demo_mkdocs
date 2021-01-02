@@ -4,7 +4,7 @@ site_url: 'https://Stepa86.github.io/demo_mkdocs/'
 theme:
   name: 'material'
   logo: '/assets/images/logo.png'
-  favicon: '/assets/images/favicon.ico'
+  favicon: '/assets/images/favicon.svg'
   language: ru
   palette:
     scheme: preference
