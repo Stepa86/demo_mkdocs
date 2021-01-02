@@ -9,8 +9,14 @@
 ## Как включить пайплайн по генерации сайта на github-pages
 
 1. Готовый файл пайплайна уже есть в репозитории: [.github\workflows\gh-pages.yml](https://github.com/Stepa86/demo_mkdocs/blob/master/.github/workflows/gh-pages.yml)
+
 2. В настройках репо нужно включить использование Actions. https://github.com/<путь к репо>/settings/actions . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
+
+   ![image-20210102180048869](index.assets/image-20210102180048869.png)
+
 3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт. Адрес сайта можно посмотреть в настройках https://github.com/<путь к репо>/settings.
+
+   ![image-20210102175958453](index.assets/image-20210102175958453.png)
 
 ## Как включить пайплайн по генерации сайта на gitlab.pages
 
