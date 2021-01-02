@@ -10,13 +10,13 @@
 
 1. Готовый файл пайплайна уже есть в репозитории: [.github\workflows\gh-pages.yml](https://github.com/Stepa86/demo_mkdocs/blob/master/.github/workflows/gh-pages.yml)
 
-2. В настройках репо нужно включить использование Actions. https://github.com/<путь к репо>/settings/actions . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
+2. В настройках репо нужно включить использование Actions. `https://github.com/<путь к репо>/settings/actions` . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
 
-   [![image-20210102180048869][1]][1]
+   [![Setting-GA][1]][1]
 
-3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт. Адрес сайта можно посмотреть в настройках https://github.com/<путь к репо>/settings.
+3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт. Адрес сайта можно посмотреть в настройках `https://github.com/<путь к репо>/settings`.
 
-   [![image-20210102175958453][2]][2]
+   [![Setting-GP][2]][2]
 
 ## Как включить пайплайн по генерации сайта на gitlab.pages
 
@@ -31,5 +31,5 @@
 
 [Все статьи](SUMMARY.md)
 
-  [1]: ./index.assets/image-20210102180048869.png
-  [2]: ./index.assets/image-20210102175958453.png
+  [1]: ./index.assets/Setting-GA.png
+  [2]: ./index.assets/Setting-GP.png
