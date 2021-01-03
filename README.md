@@ -2,7 +2,7 @@
 
 Демонстрация работы автогенерации сайта на [github-pages](https://pages.github.com/)/[gitlab.pages](https://docs.gitlab.com/ee/user/project/pages/) с использованием [mkdocs](https://www.mkdocs.org/).
 
-Лучше читать эту страницу на [https://stepa86.gitlab.io/demo_mkdocs/](https://stepa86.gitlab.io/demo_mkdocs/)
+Лучше читать эту страницу на [https://stepa86.github.io/demo_mkdocs/](https://stepa86.github.io/demo_mkdocs/)
 
 ## Что же это?
 
