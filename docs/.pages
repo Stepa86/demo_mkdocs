@@ -1,4 +1,4 @@
-arrange:
-    - index.md
+nav:
+    - Главное: index.md
     - ...
-    - SUMMARY.md
+    - Все статьи: SUMMARY.md

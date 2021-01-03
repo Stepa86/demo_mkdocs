@@ -1,0 +1,35 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+    - master
+# Т.к. весь репо про сборку статик. файла, то собирать нужно всегда.
+# Но в реальности кроме документации в репо может быть что-то еще и пересобирать нужно только при изменении документации
+# Для этого нужно добавить контроль на путь, расскоментировав строчки ниже
+#    paths:
+#    - 'docs/**'
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.8'
+        architecture: 'x64'
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install mkdocs mkdocs mkdocs-material pygments-bsl pymdown-extensions mkdocs-minify-plugin mkdocs-awesome-pages-plugin mkdocs-git-revision-date-localized-plugin
+        
+    - name: Deploy
+      run: |
+        mkdocs gh-deploy --force
+        mkdocs --version

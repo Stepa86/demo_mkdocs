@@ -3,8 +3,9 @@ site_url: 'https://stepa86.gitlab.io/demo_mkdocs'
 
 theme:
   name: 'material'
-  logo: 'assets/images/logo.png'
-  favicon: 'assets/images/favicon.ico'
+  favicon: assets/images/alpha-m-box.svg
+  icon:
+    logo: material/alpha-m-box
   language: ru
   palette:
     scheme: preference
@@ -14,7 +15,10 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   features:
-    - tabs
+    - navigation.tabs
+    - search.highlight
+    - toc.integrate
+    - header.autohide
   include_search_page: false
   search_index_only: true
 
@@ -23,7 +27,9 @@ repo_url: https://gitlab.com/Stepa86/demo_mkdocs
 
 markdown_extensions:
     - markdown.extensions.toc:
-        permalink: true
+       permalink: true
+       slugify: !!python/name:pymdownx.slugs.uslugify_cased
+       toc_depth: 2
     - markdown.extensions.admonition
     - markdown.extensions.attr_list
     - markdown.extensions.codehilite:
@@ -65,7 +71,7 @@ plugins:
   - awesome-pages:
       collapse_single_pages: false
   - minify:
-        minify_html: true
+      minify_html: true
 
 extra:
   social:
@@ -74,5 +80,8 @@ extra:
     - icon: fontawesome/brands/gitlab
       link: 'https://gitlab.com/Stepa86/demo_mkdocs'
 extra_css:
-    - assets/css/custom.css
+  - 'assets/css/custom.css'
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - assets/javascripts/tables.js
 
