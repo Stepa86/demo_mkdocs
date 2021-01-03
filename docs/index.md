@@ -8,6 +8,8 @@
 
 ## GitHub Pages
 
+Смотрите пример репозитория на GitHub [https://github.com/Stepa86/demo_mkdocs/](https://github.com/Stepa86/demo_mkdocs/) и пример сайта [https://stepa86.github.io/demo_mkdocs/](https://stepa86.github.io/demo_mkdocs/)
+
 1. Готовый файл пайплайна уже есть в репозитории: [.github\workflows\gh-pages.yml](https://github.com/Stepa86/demo_mkdocs/blob/master/.github/workflows/gh-pages.yml)
 
 2. В настройках репо нужно включить использование Actions. `https://github.com/<username>/<repository>/settings/actions` . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
@@ -26,6 +28,12 @@
   [2]: index.assets/Setting-GP.png
 
 ## GitLab Pages
+
+Смотрите пример репозитория на GitLab [https://gitlab.com/Stepa86/demo_mkdocs](https://gitlab.com/Stepa86/demo_mkdocs) и пример сайта [https://stepa86.gitlab.io/demo_mkdocs/](https://stepa86.gitlab.io/demo_mkdocs/)
+
+1. Готовый файл пайплайна уже есть в репозитории: [.gitlab-ci.yml](https://gitlab.com/Stepa86/demo_mkdocs/-/blob/master/.gitlab-ci.yml)
+2. После пуша в мастер запустится сборка и публикация. Сайт будет опубликован по адресу `<username>.gitlab.io/<repository>`
+3. При мерж-реквестах будет выполнятся тестирование - будут проверены ссылки на их существование и корректность настроек
 
 Так же смотрите инструкцию на странице [mkdocs-material](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#gitlab-pages)
 
