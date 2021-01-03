@@ -1,5 +1,5 @@
 site_name: Демо-сайт на GL и mkdocs
-site_url: 'https://stepa86.gitlab.io/demo_mkdocs'
+site_url: 'https://stepa86.gitlab.io/demo_mkdocs/'
 
 theme:
   name: 'material'
