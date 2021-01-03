@@ -136,3 +136,11 @@ mkdocs serve
 ### Картинки в gh-pages не отображаются, а при `mkdocs serve` и в других местах все нормально
 
 Эксперементальным путем выяснил, что дело в LFS. Если картинки не включать в LFS, то они начинают отображаться.
+
+## Использовано:
+
+https://www.mkdocs.org/
+
+https://github.com/squidfunk/mkdocs-material
+
+https://material.io/resources/icons/
