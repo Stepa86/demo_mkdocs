@@ -10,18 +10,22 @@
 
 1. Готовый файл пайплайна уже есть в репозитории: [.github\workflows\gh-pages.yml](https://github.com/Stepa86/demo_mkdocs/blob/master/.github/workflows/gh-pages.yml)
 
-2. В настройках репо нужно включить использование Actions. `https://github.com/<путь к репо>/settings/actions` . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
+2. В настройках репо нужно включить использование Actions. `https://github.com/<username>/<repository>/settings/actions` . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
 
     [![Setting-GA][1]][1]
 
-3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт. Адрес сайта можно посмотреть в настройках `https://github.com/<путь к репо>/settings`.
+3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт `<username>.github.io/<repository>`. Адрес сайта можно посмотреть в настройках `https://github.com/<username>/<repository>/settings`.
 
     [![Setting-GP][2]][2]
+
+Так же смотрите инструкцию на странице [mkdocs-material](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#github-pages)
 
   [1]: index.assets/Setting-GA.png
   [2]: index.assets/Setting-GP.png
 
 ## Как включить пайплайн по генерации сайта на gitlab.pages
+
+Так же смотрите инструкцию на странице [mkdocs-material](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#gitlab-pages)
 
 ## Локальный веб-сервер
 
@@ -102,9 +106,12 @@ mkdocs serve
 ## Полезное ПО
 
 
-## Примеры статей
+## Примеры
 
 - [Добавление новой статьи](checklists/New_page.md)
+- Список сайтов на [mkdocs-material](https://github.com/squidfunk/mkdocs-material#users)
+- [BSL Language Server](https://1c-syntax.github.io/bsl-language-server/)
+- [About-tests-in-1C](https://stepa86.github.io/About-tests-in-1C/)
 
 ## Известные проблемы
 
@@ -119,7 +126,3 @@ mkdocs serve
 ### Картинки в gh-pages не отображаются, а при `mkdocs serve` и в других местах все нормально
 
 Эксперементальным путем выяснил, что дело в LFS. Если картинки не включать в LFS, то они начинают отображаться.
-
-## Прочее
-
-[Все статьи](SUMMARY.md)
