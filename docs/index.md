@@ -6,24 +6,26 @@
 
 Пишите страницы в [markdown](https://ru.wikipedia.org/wiki/Markdown), а генератор статичного сайта [mkdocs](https://www.mkdocs.org/) с темой [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) соберут нестыдный статичный сайт с оформлением, навигацией, поиском, содержанием и тп. А если использовать [github-pages](https://pages.github.com/) или [gitlab.pages](https://docs.gitlab.com/ee/user/project/pages/), то этот сайт автоматически соберется, опубликуется и будет доступен с учетом видимости проекта.
 
-## Как включить пайплайн по генерации сайта на github-pages
+## GitHub Pages
 
 1. Готовый файл пайплайна уже есть в репозитории: [.github\workflows\gh-pages.yml](https://github.com/Stepa86/demo_mkdocs/blob/master/.github/workflows/gh-pages.yml)
 
 2. В настройках репо нужно включить использование Actions. `https://github.com/<username>/<repository>/settings/actions` . Для этого репо путь такой, но у вас нет прав на настройки: https://github.com/Stepa86/demo_mkdocs/settings/actions
 
-    [![Setting-GA][1]][1]
+    ??? done "Картинка"
+        [![Setting-GA][1]][1]
 
 3. После пуша в мастер (если вы не меняли триггер для запуска пайплайна) запустится сборка и через некоторое время будет опубликован статический сайт `<username>.github.io/<repository>`. Адрес сайта можно посмотреть в настройках `https://github.com/<username>/<repository>/settings`.
 
-    [![Setting-GP][2]][2]
+    ??? done "Картинка"
+        [![Setting-GP][2]][2]
 
 Так же смотрите инструкцию на странице [mkdocs-material](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#github-pages)
 
   [1]: index.assets/Setting-GA.png
   [2]: index.assets/Setting-GP.png
 
-## Как включить пайплайн по генерации сайта на gitlab.pages
+## GitLab Pages
 
 Так же смотрите инструкцию на странице [mkdocs-material](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#gitlab-pages)
 
