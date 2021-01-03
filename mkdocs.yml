@@ -27,7 +27,9 @@ repo_url: https://github.com/Stepa86/demo_mkdocs
 
 markdown_extensions:
     - markdown.extensions.toc:
-        permalink: true
+       permalink: true
+       slugify: !!python/name:pymdownx.slugs.uslugify_cased
+       toc_depth: 2
     - markdown.extensions.admonition
     - markdown.extensions.attr_list
     - markdown.extensions.codehilite:
